@@ -37,7 +37,7 @@
 	};
 
 	var template = Handlebars.compile( $('#template').html() ); 
-	$(document.body).append( template(data));
+	$('ul.tweets').append( template(data));
 	var temp = template(data);
 	console.log(temp);
 })();
