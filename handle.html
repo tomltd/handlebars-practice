@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Handlerbars</title>
+</head>
+<body>
+
+<ul class="tweets">
+
+
+
+<script id="template" type="text/x-handlebars-template">
+	<li>
+	<h2>{{author}}</h2>
+	<p>{{{tweet}}}</p>
+	<p>{{{url}}}</p>
+	</li>
+
+</script>
+
+</ul>
+
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.js"></script>
+
+<script>
+
+(function() {
+
+
+	var data =  {
+		author: 'Tom Freestone',
+		tweet: '<strong>Learning</strong> handlebars',
+		url: '<a href="https://www.youtube.com/watch?v=iPll5mi7u9I">URL</a>'
+
+	};
+
+	var template = Handlebars.compile( $('#template').html() ); 
+	$(document.body).append( template(data));
+	var temp = template(data);
+	console.log(temp);
+})();
+
+
+
+
+</script>
+</body>
+</html>
