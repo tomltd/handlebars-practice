@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta id="theme-color" name="theme-color" content="#307699">
+		<!--Sets colour theme for chrome on andriod devices-->
+		<!--Sets the bookmark/tab icon-->
+		<base target="_blank">
+		<!--Specifies a default target for all hyperlinks-->
+		<title>Handlebar test</title>
+	
+		<body>
+		<div id="render_here">Render Here</div>
+		<div id="render_here_again">Render here again</div>
+		 
+		<script id=first-template" type="text/x-handlebars-template">
+		<div>
+			<h1 style="color:green">{{title}}</h1>
+			
+			<h2 style="color:red">{{body}}</h2>
+		</div>
+		</script>
+			
+ 
+		 
+		 <script src="jquery-1.11.3.js"></script>
+		 <script src="handlebars-v4.0.2.js"></script>
+		 <script src="app.js"></script>
+	 </body>
+
+</html>
