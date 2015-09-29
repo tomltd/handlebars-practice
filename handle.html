@@ -3,6 +3,14 @@
 <head>
 	<meta charset=utf-8>
 	<title>Handlerbars</title>
+	
+	<style>
+		h2 span {
+			color: gray;
+		}
+		
+	</style>
+	
 </head>
 <body>
 
@@ -13,7 +21,7 @@
 <script id="template" type="text/x-handlebars-template">
   	{{#each this}}
 	<li>
-	<h2>{{author}}</h2>
+	<h2>{{author}} - <span>{{age}}</span></h2>
 	<p>{{{tweet}}}</p>
 	<p>{{{url}}}</p>
 	</li>
@@ -32,6 +40,7 @@
 
 	var data = [ {
 		author: 'Tom Freestone',
+		age: 33,
 		tweet: '<strong>Learning</strong> handlebars',
 		url: '<a href="https://www.youtube.com/watch?v=iPll5mi7u9I">URL</a>'
 
