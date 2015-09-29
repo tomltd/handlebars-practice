@@ -24,10 +24,12 @@
 	<h2>{{author}} {{#if age}}- <span>{{age}}</span>{{/if}}</h2>
 	<p>{{{tweet}}}</p>
 	<p>{{{url}}}</p>
-	{{#unless quote}}
+	{{#if quote}}
+		<h3>{{quote}}</h3>
+		{{else}}
 		<h5>Author does not have a quote</h5>
-	{{/unless}}
-	<h3>{{quote}}</h3>
+	{{/if}}
+
 	</li>
 	{{/each}}
 </script>
