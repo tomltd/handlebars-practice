@@ -21,7 +21,7 @@
 <script id="template" type="text/x-handlebars-template">
   	{{#each this}}
 	<li>
-	<h2>{{author}} - <span>{{age}}</span></h2>
+	<h2>{{author}} {{#if age}}- <span>{{age}}</span>{{/if}}</h2>
 	<p>{{{tweet}}}</p>
 	<p>{{{url}}}</p>
 	</li>
