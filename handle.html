@@ -24,6 +24,10 @@
 	<h2>{{author}} {{#if age}}- <span>{{age}}</span>{{/if}}</h2>
 	<p>{{{tweet}}}</p>
 	<p>{{{url}}}</p>
+	{{#unless quote}}
+		<h5>Author does not have a quote</h5>
+	{{/unless}}
+	<h3>{{quote}}</h3>
 	</li>
 	{{/each}}
 </script>
@@ -48,7 +52,8 @@
 	 {
 		author: 'Morris Shiner',
 		tweet: '<strong>Learning</strong> handlebars',
-		url: '<a href="https://www.youtube.com/watch?v=iPll5mi7u9I">URL</a>'
+		url: '<a href="https://www.youtube.com/watch?v=iPll5mi7u9I">URL</a>',
+		quote: 'work hard for success'
 
 	}];
 
